@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import HomeContainer from "./pages/Home/containers/HomeContainer";
+import AboutContainer from "./pages/About/containers/AboutContainer";
+import Contact from "./pages/Contact/Contact";
+import ContactContainer from "./pages/Contact/containers/ContactContainer";
+import ExperienceContainer from "./pages/Experience/containers/ExperienceContainer";
+import IndividualProjectContainer from "./pages/Projects/containers/IndividualProjectContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomeContainer />} />
+      <Route path='/about' element={<AboutContainer />} />
+      <Route path='/contact' element={<ContactContainer />} />
+      <Route path='/experience' element={<ExperienceContainer />} />
+      <Route path='/projects/individual' element={<IndividualProjectContainer />} />
+    </Routes>
   );
 }
 
