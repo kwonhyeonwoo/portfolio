@@ -1,0 +1,31 @@
+#root .project-wrapper {
+  width: 100%;
+}
+#root .project-wrapper > .projects-slider {
+  width: 422px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#root .project-wrapper > .projects-slider > .project-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+#root .project-wrapper > .projects-slider > .slider-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+#root .project-wrapper > .projects-slider > .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

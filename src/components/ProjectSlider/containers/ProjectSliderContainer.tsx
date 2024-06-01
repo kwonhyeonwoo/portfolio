@@ -1,9 +1,19 @@
-import React, { useState } from 'react'
-import Home from '../Home'
-type Props = {
+import React, { useState } from 'react';
+import ProjectSlider from '../ProjectSlider';
+type Prop = {
+    projects: {
+        title: string;
+        description: string;
+        link: string;
+        img: string;
+    }[];
+    title: string;
 
 }
-function HomeContainer() {
+const ProjectSliderContainer = ({
+    projects,
+    title,
+}: Prop) => {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     const NextSlide = (length: number) => {
@@ -25,10 +35,9 @@ function HomeContainer() {
             }
         });
     };
-
     return (
-        <Home NextSlide={NextSlide} PrevSlide={PrevSlide} currentIndex={currentIndex} />
-    )
-}
+        <ProjectSlider projects={projects} title={title} currentIndex={currentIndex} NextSlide={NextSlide} PrevSlide={PrevSlide} />
+    );
+};
 
-export default HomeContainer
+export default ProjectSliderContainer;

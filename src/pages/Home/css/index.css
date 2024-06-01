@@ -37,3 +37,11 @@
   font-size: 17px;
   font-weight: 400;
 }
+#root .home-page > .projects-section {
+  margin-top: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}

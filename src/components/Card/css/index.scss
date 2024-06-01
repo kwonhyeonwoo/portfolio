@@ -1,0 +1,35 @@
+#root {
+    .card {
+        min-width: 422px;
+        box-sizing: border-box;
+
+        &>.img {
+            width: 100%;
+        }
+
+        &>.info-wrapper {
+            margin-top: 11px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            text-overflow: ellipsis;
+
+            &>.info-title {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            &>.info-description {
+                font-size: 14px;
+                font-weight: 400;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                /* 두 줄을 넘어가면 ... 표시 */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 150%;
+            }
+        }
+    }
+}

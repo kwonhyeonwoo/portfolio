@@ -40,5 +40,11 @@
                 }
             }
         }
+
+        &>.projects-section {
+            margin-top: 88px;
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }

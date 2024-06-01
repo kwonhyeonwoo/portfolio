@@ -1,0 +1,30 @@
+#root {
+    .project-wrapper {
+        width: 100%;
+
+        &>.projects-slider {
+            width: 422px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+
+            &>.project-title {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 11px;
+            }
+
+            &>.slider-track {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            &>.button-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+
+    }
+}
