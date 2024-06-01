@@ -6,6 +6,8 @@
 }
 #root .card > .img {
   width: 100%;
+  -webkit-filter: brightness(67%);
+          filter: brightness(67%);
 }
 #root .card > .info-wrapper {
   margin-top: 11px;

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./css/index.css";
 import CardContainer from '../Card/containers/CardContainer';
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 type Prop = {
     projects: {
         title: string;
@@ -13,7 +15,13 @@ type Prop = {
     PrevSlide: () => void;
     currentIndex: number;
 }
-const ProjectSlider = ({ projects, title, NextSlide, PrevSlide, currentIndex }: Prop) => {
+const ProjectSlider = ({
+    projects,
+    title,
+    NextSlide,
+    PrevSlide,
+    currentIndex
+}: Prop) => {
     return (
         <div className='project-wrapper'>
             <div className="projects-slider">
@@ -24,15 +32,15 @@ const ProjectSlider = ({ projects, title, NextSlide, PrevSlide, currentIndex }: 
                     ))}
                 </div>
                 <div className='button-wrapper'>
-                    <button onClick={() => NextSlide(projects.length)}>
-                        <div> dldl</div>
+                    <button className='slider-button' onClick={PrevSlide}>
+                        <FontAwesomeIcon icon={faAngleLeft} />
                     </button>
-                    <button onClick={() => NextSlide(projects.length)}>
-                        <div> dldl</div>
+                    <button className='slider-button' onClick={() => NextSlide(projects.length)}>
+                        <FontAwesomeIcon icon={faAngleRight} />
                     </button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
