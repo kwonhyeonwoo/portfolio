@@ -1,1 +1,38 @@
-#root {}
+#root {
+    .footer {
+        width: 100%;
+        height: 332px;
+        background-color: rgb(69, 69, 69);
+
+
+        &>.footer-wrapper {
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            &>.wrapper {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+
+                &>.github {
+                    svg {
+                        color: white;
+                        margin-right: 7px;
+                    }
+
+
+                }
+            }
+
+        }
+    }
+}
