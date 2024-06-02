@@ -3,21 +3,25 @@
         width: 100vw;
         height: 43px;
         display: flex;
-        position: fixed;
+        position: absolute;
         align-items: center;
-        background-color: #F0F0F0;
         justify-content: end;
+        z-index: 1;
 
         &>.header-wrapper {
             padding-right: 99px;
 
             &>.content-lists {
                 display: flex;
-                column-gap: 11px;
+                column-gap: 18px;
 
                 &>.content-list {
                     font-size: 22px;
-                    font-weight: 400;
+
+                    a {
+                        color: white;
+                        font-weight: bold;
+                    }
                 }
 
             }

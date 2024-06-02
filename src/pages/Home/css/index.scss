@@ -1,6 +1,5 @@
 #root {
     .home-page {
-        padding-top: 42px;
 
         &>.home-section {
             &>.home-wrapper {
@@ -35,6 +34,7 @@
                         &>.introuduce-subtitle {
                             font-size: 17px;
                             font-weight: 400;
+
                         }
                     }
                 }
@@ -42,9 +42,15 @@
         }
 
         &>.projects-section {
+            padding: 0px 40px;
             margin-top: 88px;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            padding-bottom: 140px;
+        }
+
+        &>.introduction-section {
+            padding: 0px 40px;
         }
     }
 }

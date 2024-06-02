@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./css/index.css";
 import { images } from '../../assets';
-import CardContainer from '../../components/Card/containers/CardContainer';
-import { companyprojects, personalprojects } from './contents/contents';
+import { personalprojects } from './contents/contents';
 import ProjectSliderContainer from '../../components/ProjectSlider/containers/ProjectSliderContainer';
+import IntroductionContainer from '../../components/Introduction/containers/IntroductionContainer';
 type Prop = {
     NextSlide: (length: number) => void;
     PrevSlide: () => void;
@@ -30,6 +30,9 @@ function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
                 <ProjectSliderContainer title='개인 프로젝트' projects={personalprojects} />
                 <ProjectSliderContainer title='회사 프로젝트' projects={personalprojects} />
                 <ProjectSliderContainer title='회사 프로젝트' projects={personalprojects} />
+            </section>
+            <section className='introduction-section'>
+                <IntroductionContainer />
             </section>
         </main>
     )

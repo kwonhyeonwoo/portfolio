@@ -10,7 +10,7 @@
           filter: brightness(67%);
 }
 #root .card > .info-wrapper {
-  margin-top: 11px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,8 +22,8 @@
   text-overflow: ellipsis;
 }
 #root .card > .info-wrapper > .info-title {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: bold;
 }
 #root .card > .info-wrapper > .info-description {
   font-size: 14px;

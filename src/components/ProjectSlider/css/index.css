@@ -1,6 +1,3 @@
-#root .project-wrapper {
-  width: 100%;
-}
 #root .project-wrapper > .projects-slider {
   width: 422px;
   position: relative;

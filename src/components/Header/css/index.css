@@ -4,14 +4,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
+  position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F0F0F0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  z-index: 1;
 }
 #root .header > .header-wrapper {
   padding-right: 99px;
@@ -20,11 +20,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 11px;
-     -moz-column-gap: 11px;
-          column-gap: 11px;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
 }
 #root .header > .header-wrapper > .content-lists > .content-list {
   font-size: 22px;
-  font-weight: 400;
+}
+#root .header > .header-wrapper > .content-lists > .content-list a {
+  color: white;
+  font-weight: bold;
 }
