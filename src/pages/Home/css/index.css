@@ -34,6 +34,44 @@
   font-size: 17px;
   font-weight: 400;
 }
+#root .home-page > .introduction-section {
+  padding: 0px 40px;
+  padding-bottom: 148px;
+  padding-top: 111px;
+}
+#root .home-page > .experience-section {
+  width: 100%;
+  height: 722px;
+  padding: 0px 40px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 33px;
+}
+#root .home-page > .experience-section > .title {
+  font-size: 29px;
+  font-weight: bold;
+  color: white;
+}
+#root .home-page > .experience-section > .experience-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
+}
 #root .home-page > .projects-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,9 +142,4 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-#root .home-page > .introduction-section {
-  padding: 0px 40px;
-  padding-bottom: 148px;
-  padding-top: 111px;
 }
