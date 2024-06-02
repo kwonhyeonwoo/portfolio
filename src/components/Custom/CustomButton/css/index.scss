@@ -1,0 +1,22 @@
+#root {
+    .custom-button {
+
+        button {
+            width: 199px;
+            height: 50px;
+            cursor: pointer;
+            background: black;
+            color: white;
+            display: flex;
+            column-gap: 11px;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                transition: all .3s ease-in-out;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}

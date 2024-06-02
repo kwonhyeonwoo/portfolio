@@ -8,6 +8,7 @@
   width: 100%;
   -webkit-filter: brightness(67%);
           filter: brightness(67%);
+  border-radius: 15px;
 }
 #root .card > .info-wrapper {
   margin-top: 30px;

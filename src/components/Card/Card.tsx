@@ -1,5 +1,6 @@
 import React from 'react';
 import "./css/index.css";
+import { Link } from 'react-router-dom';
 type Prop = {
     project: {
         title: string;
@@ -11,13 +12,15 @@ type Prop = {
 const Card = ({ project }: Prop) => {
     const { title, img, description, link } = project;
     return (
-        <div className='card'>
-            <img className='img' src={img} alt="content-img" />
-            <div className='info-wrapper'>
-                <div className='info-title'>{title}</div>
-                <div className='info-description'>{description}</div>
+        <Link to={link}>
+            <div className='card'>
+                <img className='img' src={img} alt="content-img" />
+                <div className='info-wrapper'>
+                    <div className='info-title'>{title}</div>
+                    <div className='info-description'>{description}</div>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

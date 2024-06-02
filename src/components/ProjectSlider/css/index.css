@@ -19,7 +19,7 @@
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 #root .project-wrapper > .projects-slider > .button-wrapper {
-  width: 100%;
+  width: 90%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +28,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   top: 37%;
+  left: 20px;
 }
 #root .project-wrapper > .projects-slider > .button-wrapper > .slider-button {
   width: 38px;

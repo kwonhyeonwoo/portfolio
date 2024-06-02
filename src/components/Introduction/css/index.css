@@ -2,8 +2,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #root .introduction-wrapper > .introduction-text-wrapper > .introduction-title {
   display: -webkit-box;
@@ -37,6 +38,15 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
+}
+#root .introduction-wrapper > .introduction-text-wrapper > .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 50px;
 }
 #root .introduction-wrapper > .profile-img img {
   width: 100%;

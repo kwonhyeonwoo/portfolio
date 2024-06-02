@@ -19,11 +19,12 @@
             }
 
             &>.button-wrapper {
-                width: 100%;
+                width: 90%;
                 position: absolute;
                 display: flex;
                 justify-content: space-between;
                 top: 37%;
+                left: 20px;
 
                 &>.slider-button {
                     width: 38px;

@@ -1,7 +1,7 @@
 #root {
     .introduction-wrapper {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
 
         &>.introduction-text-wrapper {
@@ -31,7 +31,15 @@
                     font-weight: 500;
                     line-height: 120%;
                 }
+
             }
+
+            &>.button-wrapper {
+                display: flex;
+                justify-content: end;
+                margin-top: 50px;
+            }
+
 
         }
 
