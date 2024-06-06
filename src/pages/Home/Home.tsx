@@ -6,6 +6,7 @@ import ProjectSliderContainer from '../../components/ProjectSlider/containers/Pr
 import IntroductionContainer from '../../components/Introduction/containers/IntroductionContainer';
 import CustomButtonContainer from '../../components/Custom/CustomButton/containers/CustomButtonContainer';
 import ExperienceCardContainer from '../../components/ExperienceCard/containers/ExperienceCardContainer';
+import TopBannerContainer from '../../components/TopBanner/containers/TopBannerContainer';
 type Prop = {
     NextSlide: (length: number) => void;
     PrevSlide: () => void;
@@ -15,19 +16,11 @@ function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
     return (
         <main className='home-page'>
             {/* 홈 이미지 */}
-            <section className='home-section'>
-                <div className='home-wrapper'>
-                    <div className='img-wrapper'>
-                        <img className='img' src={images.main.main} alt="main img" />
-                        <div className='introduce-wrapper'>
-                            <div className='introuduce-title'>frontend developer</div>
-                            <div className='introduce-subtitle'>
-                                끊임없이 배우고 성장하는 프론트엔드 개발자입니다.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <TopBannerContainer
+                src={images.main.main}
+                title='frontend developer'
+                subtitle='끊임없이 배우고 성장하는 프론트엔드 개발자입니다.'
+            />
             {/* 간단한 내 소개 */}
             <section className='introduction-section'>
                 <IntroductionContainer />

@@ -1,46 +1,5 @@
 #root {
     .home-page {
-
-        &>.home-section {
-            &>.home-wrapper {
-                &>.img-wrapper {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-
-                    &>.img {
-                        width: 100%;
-                        height: 588px;
-                        object-fit: fill;
-                        filter: brightness(50%);
-                    }
-
-                    &>.introduce-wrapper {
-                        position: absolute;
-                        top: 277px;
-                        left: 82px;
-                        display: flex;
-                        flex-direction: column;
-                        row-gap: 22px;
-                        color: rgba(255, 255, 255, 0.8);
-
-                        &>.introuduce-title {
-                            text-transform: uppercase;
-                            font-weight: 700;
-                            font-size: 33px;
-
-                        }
-
-                        &>.introuduce-subtitle {
-                            font-size: 17px;
-                            font-weight: 400;
-
-                        }
-                    }
-                }
-            }
-        }
-
         &>.introduction-section {
             padding: 0px 40px;
             padding-bottom: 148px;

@@ -36,12 +36,16 @@ const contentArr = [
     },
     {
         content: '소개',
-        link: '/project',
+        link: '/about',
     },
     {
-        content: '경력',
-        link: '/experience'
+        content: '프로젝트',
+        link: '/projects'
     },
+    // {
+    //     content: '경력',
+    //     link: '/experience'
+    // },
     {
         content: '연락처',
         link: '/contact'

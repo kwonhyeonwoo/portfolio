@@ -1,0 +1,153 @@
+#root .about-page {
+  width: 100%;
+  height: 100%;
+}
+#root .about-page > .about-section {
+  height: 555px;
+  background-color: rgb(243, 243, 243);
+}
+#root .about-page > .about-section > .about-wrapper {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+#root .about-page > .about-section > .about-wrapper > .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 44px;
+}
+#root .about-page > .about-section > .about-wrapper > .title-wrapper > .title {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: pre-wrap;
+  line-height: 140%;
+}
+#root .about-page > .about-section > .about-wrapper > .title-wrapper > .sns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 9px;
+}
+#root .about-page > .about-section > .about-wrapper > .title-wrapper > .sns-wrapper p {
+  font-size: 21px;
+  font-weight: bold;
+}
+#root .about-page > .about-section > .about-wrapper > .title-wrapper > .sns-wrapper > .sns-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+#root .about-page > .about-section > .about-wrapper > .title-wrapper > .sns-wrapper > .sns-img svg {
+  font-size: 22px;
+}
+#root .about-page > .about-section > .about-wrapper > .subtitle-wrapper p {
+  color: rgb(124, 124, 124);
+  line-height: 150%;
+  white-space: pre-wrap;
+}
+#root .about-page > .projects-section {
+  margin: 0 auto;
+  padding: 20px;
+}
+#root .about-page > .projects-section > .projects-wrapper {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+#root .about-page > .projects-section > .projects-wrapper > .projects-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 33px;
+}
+#root .about-page > .projects-section > .projects-wrapper > .projects-title h2 {
+  font-size: 19px;
+  font-weight: bold;
+}
+#root .about-page > .projects-section > .projects-wrapper > .projects-title p {
+  font-size: 17px;
+  font-weight: 600;
+}
+#root .about-page > .projects-section > .projects-wrapper > .projects-subtitle {
+  margin-top: 33px;
+  white-space: pre-wrap;
+  line-height: 150%;
+  color: rgb(98, 98, 98);
+}
+#root .about-page > .projects-section > .projects-wrapper > .img-wrapper {
+  width: 1280px;
+  margin-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#root .about-page > .projects-section > .projects-wrapper > .img-wrapper img {
+  width: 412px;
+}
+#root .about-page > .projects-section > .projects-wrapper > .img-wrapper > .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 33px;
+}
+#root .about-page > .projects-section > .projects-wrapper > .img-wrapper > .img-box > .about-description {
+  line-height: 150%;
+}
+#root .about-page > .projects-section > .projects-wrapper > .img-wrapper > .img-box:nth-child(1) div {
+  font-weight: 700;
+  white-space: pre-wrap;
+  font-size: 22px;
+}
+#root .about-page > .projects-section > .projects-wrapper > .projects-about {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#root .about-page > .projects-section > .projects-wrapper > .projects-about > .about-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 130%;
+  white-space: pre-wrap;
+}
