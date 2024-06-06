@@ -1,7 +1,79 @@
-#root .home-page > .introduction-section {
-  padding: 0px 40px;
-  padding-bottom: 148px;
-  padding-top: 111px;
+#root .home-page > .home-about-wrapper {
+  height: 555px;
+  background-color: rgb(243, 243, 243);
+}
+#root .home-page > .home-about-wrapper > .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+#root .home-page > .home-about-wrapper > .about-wrapper > .about-text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 44px;
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#root .home-page > .home-about-wrapper > .about-wrapper > .about-text-wrapper > .text-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 150%;
+}
+#root .home-page > .home-about-wrapper > .about-wrapper > .about-text-wrapper > .text-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(108, 108, 108);
+}
+#root .home-page > .home-about-wrapper > .about-wrapper > .profile-img {
+  width: 388px;
+  height: 540px;
+  position: absolute;
+  top: 77px;
+  right: 332px;
+}
+#root .home-page > .home-about-wrapper > .about-wrapper > .profile-img img {
+  width: 388px;
+}
+#root .home-page > .home-about-wrapper > .about-wrapper > .profile-img > .profile-about {
+  height: 151px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(26, 26, 26);
+}
+#root .home-page > .home-about-wrapper > .about-wrapper > .profile-img > .profile-about > .text {
+  color: white;
+  line-height: 180%;
+  font-weight: 400;
+  font-size: 14px;
+}
+#root .home-page > .projects-slider-section {
+  width: 100%;
+}
+#root .home-page > .projects-slider-section img {
+  width: 100%;
+  height: 664px;
 }
 #root .home-page > .experience-section {
   width: 100%;

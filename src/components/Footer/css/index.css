@@ -1,27 +1,25 @@
 #root .footer {
-  width: 100%;
-  height: 332px;
-  background-color: rgb(69, 69, 69);
-}
-#root .footer > .footer-wrapper {
-  margin: 0 auto;
-  height: 100%;
+  height: 411px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-#root .footer > .footer-wrapper p {
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
+#root .footer > .footer-wrapper {
+  white-space: pre-wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0px;
 }
-#root .footer > .footer-wrapper > .wrapper {
+#root .footer > .footer-wrapper > .footer-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,9 +27,121 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 8px;
+  row-gap: 44px;
 }
-#root .footer > .footer-wrapper > .wrapper > .github svg {
-  color: white;
-  margin-right: 7px;
+#root .footer > .footer-wrapper > .footer-about > .title {
+  font-size: 29px;
+  font-weight: 700;
+}
+#root .footer > .footer-wrapper > .footer-about > .text {
+  color: rgb(134, 134, 134);
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail > .contact-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail > .contact-name {
+  font-size: 14px;
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail > .contact-phone {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 11px;
+  font-size: 14px;
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail > .contact-phone > .phone {
+  color: rgb(134, 134, 134);
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail > .email-wrapper {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 11px;
+  font-size: 14px;
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail > .email-wrapper p:nth-child(1) {
+  color: rgb(134, 134, 134);
+}
+#root .footer > .footer-wrapper > .contact-wrapper > .contact-detail > .email-wrapper p:nth-child(2) {
+  font-size: 14px;
+}
+#root .footer > .footer-wrapper > .location-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 38px;
+}
+#root .footer > .footer-wrapper > .location-wrapper > .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 38px;
+}
+#root .footer > .footer-wrapper > .location-wrapper > .location > .title {
+  font-size: 25px;
+  font-weight: 700;
+}
+#root .footer > .footer-wrapper > .location-wrapper > .location p:nth-child(1) {
+  color: 18px;
+  font-weight: 700;
+}
+#root .footer > .footer-wrapper > .location-wrapper > .location p:nth-child(2) {
+  font-size: 14px;
+  color: rgb(134, 134, 134);
+}
+#root .footer > .footer-wrapper > .location-wrapper > .location > .location-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+}
+#root .footer > .footer-wrapper > .location-wrapper > .follow p:nth-child(1) {
+  color: 18px;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+#root .footer > .footer-wrapper > .location-wrapper > .follow > .sns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 11px;
+     -moz-column-gap: 11px;
+          column-gap: 11px;
+}
+#root .footer > .footer-wrapper > .location-wrapper > .follow > .sns-wrapper svg {
+  font-size: 18px;
+  font-weight: 700;
 }

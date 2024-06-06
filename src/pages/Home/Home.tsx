@@ -16,16 +16,40 @@ function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
     return (
         <main className='home-page'>
             {/* 홈 이미지 */}
-            <TopBannerContainer
+            {/* <TopBannerContainer
                 src={images.main.main}
                 title='frontend developer'
                 subtitle='끊임없이 배우고 성장하는 프론트엔드 개발자입니다.'
-            />
-            {/* 간단한 내 소개 */}
-            <section className='introduction-section'>
-                <IntroductionContainer />
+            /> */}
+            <section className='home-about-wrapper'>
+                <div className='about-wrapper'>
+                    <div className='about-text-wrapper'>
+                        <p className='text-title'>
+                            끊임없이 배우고 성장하는 프론트엔드<br />
+                            개발자 입니다.
+                        </p>
+                        <p className='text-subtitle'>
+                            소통이 원활하고 꾸준한 노력을 지속하는 개발자로서,<br />
+                            팀과의 협업과 프로젝트 성공을 위해 헌신합니다. <br />
+                            항상 최선을 다해 성장하며, 문제 해결에 있어 창의적이고 신속하게 대응합니다.
+                        </p>
+
+                    </div>
+                    <div className='profile-img'>
+                        <img src={images.about.profile} alt="profile" />
+                        <div className='profile-about'>
+                            <p className='text'>
+                                밝고 친화적인 성격으로 팀원들과 원활하게 소통하며,<br />긍정적인 분위기를 조성합니다. <br />
+                                항상 미소와 함께 협력하여 최고의 결과를 만들어냅니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </section>
-            {/* 경력 */}
+            <section className='projects-slider-section'>
+                <img src={images.main.main} alt="" />
+            </section>
             <section className='experience-section'>
                 <h2 className='title'>Experience</h2>
                 <div className='experience-wrapper'>

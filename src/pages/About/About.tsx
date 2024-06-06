@@ -22,7 +22,8 @@ function About() {
                             <p>팔로우</p>
                             <div className='sns-img'>
                                 <FontAwesomeIcon icon={faGithub} />
-                                <FontAwesomeIcon icon={faInstagram} />                         </div>
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </div>
                         </div>
                     </div>
                     <div className='subtitle-wrapper'>
@@ -42,17 +43,17 @@ UI/UX 디자인에 깊은 관심을 가지고 있으며, 사용자 친화적인 
             <section className='projects-section'>
                 <div className='projects-wrapper'>
                     <div className='projects-title'>
-                        <h2>프로젝트에 진심인</h2>
+                        <h2>개발에 진심인</h2>
                         <p>항상 성장에 진심이고 새로운 가능성을 일으킵니다.</p>
                     </div>
-                    <div className='projects-subtitle'>{`나는 텍스트 블록입니다. 이 텍스트를 변경하려면 편집 버튼을 클릭하세요. Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit. Ut elittellus, luctus nec ullamcorper mattis, pulvinar 
-dapibus leo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-culpa qui officia deserunt mollit anim id est labum.`}</div>
+                    <div className='projects-subtitle'>{`개발에 진심인 저는 항상 성장과 혁신을 추구하며 새로운 가능성을 열어갑니다. 기술의 한계를 뛰어넘고 끊임없이 
+배우며, 더 나은 솔루션을 제공하기 위해 최선을 다합니다. 최신 기술 트렌드와 도구를 적극적으로 활용하여 
+최고의 결과를 창출합니다. 열정과 헌신으로 가득 찬 저는, 창의적인 문제 해결과 탁월한 성과를 통해 고객의 
+성공을 이끌어갑니다. 함께 협력하고 도전하는 과정을 통해, 지속적인 발전과 성장을 이루어내며, 세상에 긍정적인 
+변화를 만들어가는 데 기여합니다.`}</div>
                     <div className='img-wrapper'>
                         {projectsArr.map(({ img, description }, idx) => (
-                            <div className='img-box'>
+                            <div className='img-box' key={idx}>
                                 <img src={images.main.main} alt="projects imgs" />
                                 <div className='about-description'>{description}</div>
                             </div>
@@ -69,8 +70,8 @@ export default About
 const projectsArr = [
     {
         img: '',
-        description: `저는 인테리어 디자인 및 가구 
-프로젝트 관리를 전문으로 하고 있습니다.`
+        description: `끊임없는 학습과 혁신을 통해 최적의 성능과 
+유용성을 제공하는 데 주력하고 있습니다.`
     },
     {
         img: '',
