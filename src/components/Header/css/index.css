@@ -29,5 +29,14 @@
 }
 #root .header > .header-wrapper > .content-lists > .content-list a {
   color: white;
-  font-weight: bold;
+  font-weight: 500;
+}
+#root .header-white {
+  background-color: white;
+}
+#root .header-white > .header-wrapper {
+  padding-right: 99px;
+}
+#root .header-white > .header-wrapper > .content-lists > .content-list a {
+  color: black;
 }

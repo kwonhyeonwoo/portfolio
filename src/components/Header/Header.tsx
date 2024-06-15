@@ -2,16 +2,16 @@ import React from 'react';
 import "./css/index.css";
 import { Link } from 'react-router-dom';
 type Props = {
-
+    url: string;
 }
 // 홈 (Home)
 // 소개 (About)
 // 프로젝트 (Projects)
 // 경력 (Experience)
 // 연락처 (Contact)
-const Header = (props: Props) => {
+const Header = ({ url }: Props) => {
     return (
-        <header className='header'>
+        <header className={`header ${url === '/' && 'header-white'}`}>
             <div className='header-wrapper'>
                 <ul className='content-lists'>
                     {contentArr.map(({ content, link }, idx) => (

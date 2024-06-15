@@ -1,5 +1,5 @@
 #root .home-page > .home-about-wrapper {
-  height: 555px;
+  height: 625px;
   background-color: rgb(243, 243, 243);
 }
 #root .home-page > .home-about-wrapper > .about-wrapper {
@@ -41,16 +41,18 @@
 }
 #root .home-page > .home-about-wrapper > .about-wrapper > .profile-img {
   width: 388px;
-  height: 540px;
+  height: 628px;
   position: absolute;
   top: 77px;
   right: 332px;
+  background-color: black;
 }
 #root .home-page > .home-about-wrapper > .about-wrapper > .profile-img img {
   width: 388px;
+  height: 70%;
 }
 #root .home-page > .home-about-wrapper > .about-wrapper > .profile-img > .profile-about {
-  height: 151px;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +75,7 @@
 }
 #root .home-page > .projects-slider-section img {
   width: 100%;
-  height: 664px;
+  height: 720px;
 }
 #root .home-page > .experience-section {
   width: 100%;
@@ -108,22 +110,30 @@
      -moz-column-gap: 33px;
           column-gap: 33px;
 }
-#root .home-page > .projects-section {
+#root .home-page > .service-section {
+  background-color: rgb(243, 243, 243);
+  height: 100%;
+  padding-bottom: 120px;
+}
+#root .home-page > .service-section > .service-wrapper {
+  width: 1280px;
+  height: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  padding: 145px;
+}
+#root .home-page > .service-section > .service-wrapper > .title-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 40px;
-  margin-top: 88px;
-  padding-bottom: 140px;
 }
-#root .home-page > .projects-section > .title-wrapper {
+#root .home-page > .service-section > .service-wrapper > .title-wrapper > .title-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,51 +141,98 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 21px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  row-gap: 13px;
+}
+#root .home-page > .service-section > .service-wrapper > .title-wrapper > .title-box > .sm-text {
+  font-size: 13px;
+  font-weight: 400;
+}
+#root .home-page > .service-section > .service-wrapper > .title-wrapper > .title-box > .text {
+  font-size: 26px;
+  font-weight: 700;
+}
+#root .home-page > .service-section > .service-wrapper > .title-wrapper > .projects-move {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-#root .home-page > .projects-section > .title-wrapper > .title {
-  font-size: 48px;
-  font-weight: bold;
+#root .home-page > .service-section > .service-wrapper > .title-wrapper > .projects-move > .move-text {
+  font-weight: 700;
 }
-#root .home-page > .projects-section > .title-wrapper > .subtitle {
-  white-space: pre-wrap;
-  text-align: center;
-  line-height: 120%;
-  margin-bottom: 82px;
-}
-#root .home-page > .projects-section > .title-wrapper > .subtitle > .line {
-  width: 1px;
-  height: 188px;
-  background-color: black;
-  margin: 0 auto;
-  margin-top: 22px;
-}
-#root .home-page > .projects-section > .title-wrapper > .subtitle > .subtitle-bold {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 9px;
-}
-#root .home-page > .projects-section > .title-wrapper > .subtitle > .subtitle-text {
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 400;
-}
-#root .home-page > .projects-section > .title-wrapper > .subtitle > .button-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30px;
-}
-#root .home-page > .projects-section > .projects-wrapper {
+#root .home-page > .service-section > .service-wrapper > .introduction-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 48px;
+}
+#root .home-page > .service-section > .service-wrapper > .introduction-number > .introduction-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 11px;
+  white-space: pre;
+}
+#root .home-page > .service-section > .service-wrapper > .introduction-number > .introduction-box > .num {
+  font-size: 14px;
+  font-weight: 400;
+}
+#root .home-page > .service-section > .service-wrapper > .introduction-number > .introduction-box > .title {
+  font-size: 18px;
+  font-weight: 700;
+}
+#root .home-page > .service-section > .service-wrapper > .introduction-number > .introduction-box > .description {
+  color: rgb(108, 108, 108);
+  line-height: 150%;
+}
+#root .home-page > .service-section > .projects-wrapper {
+  padding-top: 55px;
+  width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+#root .home-page > .service-section > .projects-wrapper > .projects-text > .sm-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+#root .home-page > .service-section > .projects-wrapper > .projects-text > .title {
+  margin: 22px 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+#root .home-page > .service-section > .projects-wrapper > .projects-text > .sub-text {
+  color: rgb(108, 108, 108);
+  white-space: pre-wrap;
+  line-height: 150%;
+  margin-bottom: 19px;
+}
+#root .home-page > .service-section > .projects-wrapper > .projects-text > .view-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 11px;
+     -moz-column-gap: 11px;
+          column-gap: 11px;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }

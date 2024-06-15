@@ -1,12 +1,9 @@
 import React from 'react'
 import "./css/index.css";
 import { images } from '../../assets';
-import { personalprojects } from './contents/contents';
 import ProjectSliderContainer from '../../components/ProjectSlider/containers/ProjectSliderContainer';
-import IntroductionContainer from '../../components/Introduction/containers/IntroductionContainer';
-import CustomButtonContainer from '../../components/Custom/CustomButton/containers/CustomButtonContainer';
-import ExperienceCardContainer from '../../components/ExperienceCard/containers/ExperienceCardContainer';
-import TopBannerContainer from '../../components/TopBanner/containers/TopBannerContainer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 type Prop = {
     NextSlide: (length: number) => void;
     PrevSlide: () => void;
@@ -15,12 +12,6 @@ type Prop = {
 function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
     return (
         <main className='home-page'>
-            {/* 홈 이미지 */}
-            {/* <TopBannerContainer
-                src={images.main.main}
-                title='frontend developer'
-                subtitle='끊임없이 배우고 성장하는 프론트엔드 개발자입니다.'
-            /> */}
             <section className='home-about-wrapper'>
                 <div className='about-wrapper'>
                     <div className='about-text-wrapper'>
@@ -50,36 +41,48 @@ function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
             <section className='projects-slider-section'>
                 <img src={images.main.main} alt="" />
             </section>
-            <section className='experience-section'>
-                <h2 className='title'>Experience</h2>
-                <div className='experience-wrapper'>
-                    {experienceArr.map((item, idx) => (
-                        <ExperienceCardContainer
-                            experience={item}
-                            key={idx}
-                        />
-                    ))}
-                </div>
-            </section>
-            {/* 프로젝트 모음 */}
-            <section className='projects-section'>
-                <div className='title-wrapper'>
-                    <h2 className='title'>끊임없는 나의 "도전"</h2>
-                    <div className='subtitle'>
-                        <p className='subtitle-bold'>끊임없는 열정과 새로운 기술에 대한 도전의식을 가지고 있습니다.</p>
-                        <p className='subtitle-text'>{`전문적인 웹 및 애플리케이션 개발뿐만 아니라 혁신적인 디지털
-솔루션을 통해 다양한 분야로 확장하고 있으며, 고객의 성공을 위한 토탈 개발 서비스를 
-지향해 성장하고 있습니다.`}</p>
-                        <div className='button-wrapper'>
-                            <CustomButtonContainer title='Project' link='' />
+            <section className='service-section'>
+                <div className='service-wrapper'>
+                    <div className='title-wrapper'>
+                        <div className='title-box'>
+                            <p className='sm-text'>WHAT I DO</p>
+                            <p className='text'>Services</p>
                         </div>
-                        <div className='line' />
+                        <div className='projects-move'>
+                            <div className='move-text'>View all Services </div>
+                            <FontAwesomeIcon icon={faArrowRightLong} />
+                        </div>
+                    </div>
+                    <div className='introduction-number'>
+                        {introductionArr.map(({ num, title, description }, idx) => (
+                            <div className='introduction-box'>
+                                <p className='num'>{num}</p>
+                                <p className='title'>{title}</p>
+                                <p className='description'>{description}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className='projects-wrapper'>
-                    <ProjectSliderContainer title='개인 프로젝트' projects={personalprojects} />
-                    <ProjectSliderContainer title='회사 프로젝트' projects={personalprojects} />
-                    <ProjectSliderContainer title='회사 프로젝트' projects={personalprojects} />
+                    <div className='projects-text'>
+                        <p className='sm-text'>MOST RECENT</p>
+                        <p className='title'>Projects</p>
+                        <p className='sub-text'>{`제 포트폴리오에서는 리액트, 리액트 네이티브, 그리고 NestJS를 활용한 
+다양한 프로젝트를 통해 웹 및 모바일 애플리케이션 개발 능력을 증명하고 있습니다. 
+각 프로젝트는 컴포넌트 기반의 UI 설계, 효율적인 상태 관리, 그리고 백엔드 서버 
+구축 등 실무 중심의 기술을 적용하여 완성되었습니다. 이러한 경험을 통해 다양한 
+기술 스택을 익히고, 문제 해결 능력을 향상시켜왔습니다.`}
+                        </p>
+                        <div className='view-projects'>
+                            <p>View all Servies </p>
+                            <FontAwesomeIcon icon={faArrowRightLong} />
+                        </div>
+                    </div>
+                    <div className='project-img-wrapper'>
+                        <div className='project-img-box'>
+                            <ProjectSliderContainer projects={projectsArr} title={''} />
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -87,7 +90,45 @@ function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
 }
 
 export default Home;
-
+const projectsArr = [
+    {
+        img: images.main.main,
+        link: '/'
+    },
+    {
+        img: images.main.main,
+        link: '/'
+    },
+]
+const introductionArr = [
+    {
+        num: '01.',
+        title: 'React',
+        description: `리액트는 사용자 인터페이스를 구축하기 위한 자바스크립트 
+라이브러리로,컴포넌트 기반의 구조를 통해 효율적인 상태 
+관리와 빠른 렌더링을 지원합니다.단일 페이지 애플리케이션 
+개발에 최적화되어 있으며, 재사용 가능한 UI 컴포넌트를 
+쉽게 만들 수 있습니다.`
+    },
+    {
+        num: '02.',
+        title: 'ReactNative',
+        description: `리액트 네이티브는 모바일 애플리케이션 개발을 위한 
+프레임워크로,리액트와 동일한 컴포넌트 기반 구조를 
+사용하여 iOS와 안드로이드에서 모두 작동하는 네이티브 
+앱을 제작할 수 있습니다. 이를 통해 자바스크립트로 
+네이티브 성능을 갖춘 앱을 개발할 수 있습니다.`
+    },
+    {
+        num: '03.',
+        title: '프론트엔드',
+        description: `NestJS는 효율적이고 확장 가능한 서버사이드 
+애플리케이션을 구축하기 위한 프레임워크로, 
+현재 프로젝트를 통해 실력을 쌓아가고 있습니다. 
+Typescript를 기반으로 한 모듈식 아키텍처를 활용하여 
+백엔드 개발 경험을 넓혀가고 있습니다.`
+    },
+]
 const experienceArr = [
     {
         company: '(주)에프이씨',

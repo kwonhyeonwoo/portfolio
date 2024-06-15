@@ -3,11 +3,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-}
-#root .project-wrapper > .projects-slider > .project-title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 11px;
+  position: relative;
 }
 #root .project-wrapper > .projects-slider > .slider-track {
   display: -webkit-box;
@@ -27,7 +23,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 37%;
+  top: 140px;
   left: 20px;
 }
 #root .project-wrapper > .projects-slider > .button-wrapper > .slider-button {

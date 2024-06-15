@@ -5,8 +5,6 @@ import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 type Prop = {
     projects: {
-        title: string;
-        description: string;
         link: string;
         img: string;
     }[];
@@ -25,7 +23,6 @@ const ProjectSlider = ({
     return (
         <div className='project-wrapper'>
             <div className="projects-slider">
-                <h2 className='project-title'>{title}</h2>
                 <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {projects.map((item, idx) => (
                         <CardContainer key={idx} project={item} />

@@ -1,16 +1,15 @@
 @charset "UTF-8";
-#root .card {
-  min-width: 422px;
+#root .card-wrapper .card {
+  min-width: 442px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-#root .card > .img {
+#root .card-wrapper .card > .img {
   width: 100%;
   -webkit-filter: brightness(67%);
           filter: brightness(67%);
-  border-radius: 15px;
 }
-#root .card > .info-wrapper {
+#root .card-wrapper .card > .info-wrapper {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,11 +21,11 @@
   row-gap: 12px;
   text-overflow: ellipsis;
 }
-#root .card > .info-wrapper > .info-title {
+#root .card-wrapper .card > .info-wrapper > .info-title {
   font-size: 25px;
   font-weight: bold;
 }
-#root .card > .info-wrapper > .info-description {
+#root .card-wrapper .card > .info-wrapper > .info-description {
   font-size: 14px;
   font-weight: 400;
   display: -webkit-box;

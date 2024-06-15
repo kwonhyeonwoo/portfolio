@@ -1,36 +1,38 @@
 #root {
-    .card {
-        min-width: 422px;
-        box-sizing: border-box;
+    .card-wrapper {
 
-        &>.img {
-            width: 100%;
-            filter: brightness(67%);
-            border-radius: 15px;
-        }
+        .card {
+            min-width: 442px;
+            box-sizing: border-box;
 
-        &>.info-wrapper {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            row-gap: 12px;
-            text-overflow: ellipsis;
-
-            &>.info-title {
-                font-size: 25px;
-                font-weight: bold;
+            &>.img {
+                width: 100%;
+                filter: brightness(67%);
             }
 
-            &>.info-description {
-                font-size: 14px;
-                font-weight: 400;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                /* 두 줄을 넘어가면 ... 표시 */
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+            &>.info-wrapper {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
                 text-overflow: ellipsis;
-                line-height: 150%;
+
+                &>.info-title {
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+
+                &>.info-description {
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    /* 두 줄을 넘어가면 ... 표시 */
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 150%;
+                }
             }
         }
     }

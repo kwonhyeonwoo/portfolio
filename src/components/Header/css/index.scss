@@ -20,7 +20,27 @@
 
                     a {
                         color: white;
-                        font-weight: bold;
+                        font-weight: 500;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .header-white {
+        background-color: white;
+
+        &>.header-wrapper {
+            padding-right: 99px;
+
+            &>.content-lists {
+
+
+                &>.content-list {
+
+                    a {
+                        color: black;
                     }
                 }
 

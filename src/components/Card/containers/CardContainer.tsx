@@ -2,8 +2,7 @@ import React from 'react';
 import Card from '../Card';
 type Prop = {
     project: {
-        title: string;
-        description: string;
+
         link: string;
         img: string;
     }

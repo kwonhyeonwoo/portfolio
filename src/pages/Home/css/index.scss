@@ -2,7 +2,7 @@
     .home-page {
 
         &>.home-about-wrapper {
-            height: 555px;
+            height: 625px;
             background-color: rgba(243, 243, 243, 1);
 
             &>.about-wrapper {
@@ -38,17 +38,19 @@
 
                 &>.profile-img {
                     width: 388px;
-                    height: 540px;
+                    height: 628px;
                     position: absolute;
                     top: 77px;
                     right: 332px;
+                    background-color: black;
 
                     img {
                         width: 388px;
+                        height: 70%;
                     }
 
                     &>.profile-about {
-                        height: 151px;
+                        height: 30%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -72,7 +74,7 @@
 
             img {
                 width: 100%;
-                height: 664px;
+                height: 720px;
             }
         }
 
@@ -100,64 +102,124 @@
 
         }
 
-        &>.projects-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 0px 40px;
-            margin-top: 88px;
-            padding-bottom: 140px;
+        &>.service-section {
+            background-color: rgba(243, 243, 243, 1);
+            height: 100%;
+            padding-bottom: 120px;
 
-            &>.title-wrapper {
-                display: flex;
-                flex-direction: column;
-                row-gap: 21px;
-                align-items: center;
+            &>.service-wrapper {
+                width: 1280px;
+                height: 100%;
+                padding: 30px;
+                margin: 0 auto;
+                padding: 145px;
 
-                &>.title {
-                    font-size: 48px;
-                    font-weight: bold;
-                }
+                &>.title-wrapper {
+                    display: flex;
+                    align-items: end;
+                    justify-content: space-between;
 
-                &>.subtitle {
-                    white-space: pre-wrap;
-                    text-align: center;
-                    line-height: 120%;
-                    margin-bottom: 82px;
-
-                    &>.line {
-                        width: 1px;
-                        height: 188px;
-                        background-color: black;
-                        margin: 0 auto;
-                        margin-top: 22px;
-                    }
-
-                    &>.subtitle-bold {
-                        font-size: 18px;
-                        font-weight: bold;
-                        margin-bottom: 9px;
-                    }
-
-                    &>.subtitle-text {
-                        color: rgba(0, 0, 0, 0.5);
-                        font-weight: 400;
-                    }
-
-                    &>.button-wrapper {
+                    &>.title-box {
                         display: flex;
-                        justify-content: center;
-                        margin-top: 30px;
+                        flex-direction: column;
+                        justify-content: end;
+                        row-gap: 13px;
+
+                        &>.sm-text {
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+
+                        &>.text {
+                            font-size: 26px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    &>.projects-move {
+                        display: flex;
+                        column-gap: 12px;
+                        align-items: center;
+
+                        &>.move-text {
+                            font-weight: 700;
+                        }
+
                     }
                 }
+
+                &>.introduction-number {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 48px;
+
+                    &>.introduction-box {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 11px;
+                        white-space: pre;
+
+                        p {}
+
+                        &>.num {
+                            font-size: 14px;
+                            font-weight: 400;
+
+                        }
+
+                        &>.title {
+                            font-size: 18px;
+                            font-weight: 700;
+
+                        }
+
+                        &>.description {
+                            color: rgb(108, 108, 108);
+                            line-height: 150%;
+                        }
+                    }
+                }
+
+
             }
 
             &>.projects-wrapper {
+                padding-top: 55px;
+                width: 1280px;
                 display: flex;
                 justify-content: space-between;
+                margin: 0 auto;
+
+                &>.projects-text {
+                    &>.sm-text {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    &>.title {
+                        margin: 22px 0;
+                        font-size: 26px;
+                        font-weight: 700;
+                    }
+
+                    &>.sub-text {
+                        color: rgb(108, 108, 108);
+                        white-space: pre-wrap;
+                        line-height: 150%;
+                        margin-bottom: 19px;
+                    }
+
+                    &>.view-projects {
+                        display: flex;
+                        column-gap: 11px;
+                        text-decoration: dashed;
+
+                    }
+                }
+
+                &>.project-img-wrapper {}
             }
         }
-
 
     }
 }

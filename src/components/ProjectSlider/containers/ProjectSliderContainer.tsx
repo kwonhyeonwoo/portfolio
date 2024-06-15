@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import ProjectSlider from '../ProjectSlider';
 type Prop = {
     projects: {
-        title: string;
-        description: string;
         link: string;
         img: string;
     }[];
