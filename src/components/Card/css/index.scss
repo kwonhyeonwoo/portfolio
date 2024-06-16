@@ -7,33 +7,10 @@
 
             &>.img {
                 width: 100%;
+                height: 400px;
                 filter: brightness(67%);
             }
 
-            &>.info-wrapper {
-                margin-top: 30px;
-                display: flex;
-                flex-direction: column;
-                row-gap: 12px;
-                text-overflow: ellipsis;
-
-                &>.info-title {
-                    font-size: 25px;
-                    font-weight: bold;
-                }
-
-                &>.info-description {
-                    font-size: 14px;
-                    font-weight: 400;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    /* 두 줄을 넘어가면 ... 표시 */
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    line-height: 150%;
-                }
-            }
         }
     }
 }

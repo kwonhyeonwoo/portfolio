@@ -8,24 +8,35 @@ type Prop = {
         link: string;
         img: string;
     }[];
-    title: string;
     NextSlide: (len: number) => void;
     PrevSlide: () => void;
     currentIndex: number;
+    width?: string;
+    height?: string;
 }
 const ProjectSlider = ({
     projects,
-    title,
     NextSlide,
     PrevSlide,
-    currentIndex
+    currentIndex,
+    width,
+    height
 }: Prop) => {
     return (
         <div className='project-wrapper'>
-            <div className="projects-slider">
-                <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            <div className="projects-slider" style={{ width, }}>
+                <div className="slider-track" style={{
+                    width,
+                    height,
+                    transform: `translateX(-${currentIndex * 100}%)`
+                }}>
                     {projects.map((item, idx) => (
-                        <CardContainer key={idx} project={item} />
+                        <CardContainer
+                            key={idx}
+                            project={item}
+                            width={width}
+                            height={height}
+                        />
                     ))}
                 </div>
                 <div className='button-wrapper'>

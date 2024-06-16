@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import ProjectSlider from '../ProjectSlider';
 type Prop = {
+    width?: string;
+    height?: string;
     projects: {
         link: string;
         img: string;
     }[];
-    title: string;
 
 }
 const ProjectSliderContainer = ({
     projects,
-    title,
+    width,
+    height
 }: Prop) => {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -34,7 +36,13 @@ const ProjectSliderContainer = ({
         });
     };
     return (
-        <ProjectSlider projects={projects} title={title} currentIndex={currentIndex} NextSlide={NextSlide} PrevSlide={PrevSlide} />
+        <ProjectSlider
+            width={width}
+            height={height}
+            projects={projects}
+            currentIndex={currentIndex}
+            NextSlide={NextSlide}
+            PrevSlide={PrevSlide} />
     );
 };
 

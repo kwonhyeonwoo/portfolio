@@ -40,7 +40,7 @@
                     width: 388px;
                     height: 628px;
                     position: absolute;
-                    top: 77px;
+                    top: 137px;
                     right: 332px;
                     background-color: black;
 
@@ -212,6 +212,7 @@
                     &>.view-projects {
                         display: flex;
                         column-gap: 11px;
+                        align-items: center;
                         text-decoration: dashed;
 
                     }

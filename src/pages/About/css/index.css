@@ -13,6 +13,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-column-gap: 33px;
      -moz-column-gap: 33px;
           column-gap: 33px;
@@ -64,8 +67,8 @@
 }
 #root .about-page > .about-section > .about-wrapper > .subtitle-wrapper p {
   color: rgb(124, 124, 124);
-  line-height: 150%;
-  white-space: pre-wrap;
+  line-height: 160%;
+  white-space: pre;
 }
 #root .about-page > .projects-section {
   margin: 0 auto;
@@ -83,6 +86,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
+  padding-top: 106px;
 }
 #root .about-page > .projects-section > .projects-wrapper > .projects-title {
   display: -webkit-box;
@@ -114,9 +118,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-#root .about-page > .projects-section > .projects-wrapper > .img-wrapper img {
-  width: 412px;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
 }
 #root .about-page > .projects-section > .projects-wrapper > .img-wrapper > .img-box {
   display: -webkit-box;
@@ -128,8 +132,15 @@
           flex-direction: column;
   row-gap: 33px;
 }
+#root .about-page > .projects-section > .projects-wrapper > .img-wrapper > .img-box img {
+  width: 422px;
+  height: 282px;
+}
 #root .about-page > .projects-section > .projects-wrapper > .img-wrapper > .img-box > .about-description {
+  font-size: 14px;
   line-height: 150%;
+  color: rgb(98, 98, 98);
+  font-weight: 600;
 }
 #root .about-page > .projects-section > .projects-wrapper > .img-wrapper > .img-box:nth-child(1) div {
   font-weight: 700;

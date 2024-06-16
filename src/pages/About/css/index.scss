@@ -12,6 +12,7 @@
                 height: 100%;
                 margin: 0 auto;
                 display: flex;
+                justify-content: space-between;
                 column-gap: 33px;
                 align-items: center;
                 padding: 20px;
@@ -53,8 +54,8 @@
                 &>.subtitle-wrapper {
                     p {
                         color: rgba(124, 124, 124, 1);
-                        line-height: 150%;
-                        white-space: pre-wrap;
+                        line-height: 160%;
+                        white-space: pre;
                     }
                 }
             }
@@ -71,6 +72,7 @@
                 display: flex;
                 flex-direction: column;
                 padding: 20px;
+                padding-top: 106px;
 
                 &>.projects-title {
                     display: flex;
@@ -99,18 +101,23 @@
                     width: 1280px;
                     margin-top: 33px;
                     display: flex;
-
-                    img {
-                        width: 412px;
-                    }
+                    column-gap: 22px;
 
                     &>.img-box {
                         display: flex;
                         flex-direction: column;
                         row-gap: 33px;
 
+                        img {
+                            width: 422px;
+                            height: 282px;
+                        }
+
                         &>.about-description {
+                            font-size: 14px;
                             line-height: 150%;
+                            color: rgba(98, 98, 98, 1);
+                            font-weight: 600;
                         }
                     }
 

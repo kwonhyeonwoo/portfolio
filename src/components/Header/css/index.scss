@@ -1,7 +1,7 @@
 #root {
     .header {
         width: 100vw;
-        height: 43px;
+        height: 77px;
         display: flex;
         position: absolute;
         align-items: center;
@@ -13,14 +13,14 @@
 
             &>.content-lists {
                 display: flex;
-                column-gap: 18px;
+                column-gap: 11px;
 
                 &>.content-list {
-                    font-size: 22px;
+                    font-size: 17px;
 
                     a {
                         color: white;
-                        font-weight: 500;
+                        font-weight: 400;
                     }
                 }
 

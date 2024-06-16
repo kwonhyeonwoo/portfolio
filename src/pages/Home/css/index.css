@@ -43,7 +43,7 @@
   width: 388px;
   height: 628px;
   position: absolute;
-  top: 77px;
+  top: 137px;
   right: 332px;
   background-color: black;
 }
@@ -233,6 +233,9 @@
   -webkit-column-gap: 11px;
      -moz-column-gap: 11px;
           column-gap: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-text-decoration: dashed;
           text-decoration: dashed;
 }

@@ -1,6 +1,6 @@
 #root .header {
   width: 100vw;
-  height: 43px;
+  height: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,16 +20,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 18px;
-     -moz-column-gap: 18px;
-          column-gap: 18px;
+  -webkit-column-gap: 11px;
+     -moz-column-gap: 11px;
+          column-gap: 11px;
 }
 #root .header > .header-wrapper > .content-lists > .content-list {
-  font-size: 22px;
+  font-size: 17px;
 }
 #root .header > .header-wrapper > .content-lists > .content-list a {
   color: white;
-  font-weight: 500;
+  font-weight: 400;
 }
 #root .header-white {
   background-color: white;

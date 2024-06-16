@@ -1,1 +1,58 @@
-#root {}
+#root {
+    .projects-page {
+
+        &>.projects-gather-section {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(243, 243, 243);
+
+            &>.gather-wrapper {
+                width: 1280px;
+                margin: 0 auto;
+                margin-top: 166px;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 120px;
+
+                &>.text-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 22px;
+
+                    &>.title {
+                        font-size: 29px;
+                        font-weight: 700;
+
+                    }
+
+                    &>.subtitle {
+                        width: 400px;
+                        font-size: 15px;
+                        color: rgb(124, 124, 124);
+                        line-height: 120%;
+                    }
+
+                    &>.lists {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 12px;
+
+                        &>.list {
+                            font-size: 18px;
+                            display: flex;
+                            align-items: center;
+                            column-gap: 12px;
+
+                            svg {
+                                font-size: 18px;
+                            }
+
+                        }
+                    }
+                }
+
+                &>.slider-wrapper {}
+            }
+        }
+    }
+}

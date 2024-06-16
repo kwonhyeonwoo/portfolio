@@ -4,12 +4,10 @@ import { images } from '../../assets';
 import ProjectSliderContainer from '../../components/ProjectSlider/containers/ProjectSliderContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 type Prop = {
-    NextSlide: (length: number) => void;
-    PrevSlide: () => void;
-    currentIndex: number;
 }
-function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
+function Home(pros: Prop) {
     return (
         <main className='home-page'>
             <section className='home-about-wrapper'>
@@ -48,10 +46,10 @@ function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
                             <p className='sm-text'>WHAT I DO</p>
                             <p className='text'>Services</p>
                         </div>
-                        <div className='projects-move'>
+                        <Link to={'/projects'} className='projects-move'>
                             <div className='move-text'>View all Services </div>
                             <FontAwesomeIcon icon={faArrowRightLong} />
-                        </div>
+                        </Link>
                     </div>
                     <div className='introduction-number'>
                         {introductionArr.map(({ num, title, description }, idx) => (
@@ -73,14 +71,14 @@ function Home({ NextSlide, PrevSlide, currentIndex }: Prop) {
 구축 등 실무 중심의 기술을 적용하여 완성되었습니다. 이러한 경험을 통해 다양한 
 기술 스택을 익히고, 문제 해결 능력을 향상시켜왔습니다.`}
                         </p>
-                        <div className='view-projects'>
+                        <Link to={'/projects'} className='view-projects'>
                             <p>View all Servies </p>
                             <FontAwesomeIcon icon={faArrowRightLong} />
-                        </div>
+                        </Link >
                     </div>
                     <div className='project-img-wrapper'>
                         <div className='project-img-box'>
-                            <ProjectSliderContainer projects={projectsArr} title={''} />
+                            <ProjectSliderContainer projects={projectsArr} />
                         </div>
                     </div>
                 </div>
@@ -121,7 +119,7 @@ const introductionArr = [
     },
     {
         num: '03.',
-        title: '프론트엔드',
+        title: 'NestJs',
         description: `NestJS는 효율적이고 확장 가능한 서버사이드 
 애플리케이션을 구축하기 위한 프레임워크로, 
 현재 프로젝트를 통해 실력을 쌓아가고 있습니다. 

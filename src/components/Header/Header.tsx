@@ -31,23 +31,15 @@ export default Header;
 
 const contentArr = [
     {
-        content: '홈',
+        content: 'Home',
         link: '/',
     },
     {
-        content: '소개',
+        content: 'About',
         link: '/about',
     },
     {
-        content: '프로젝트',
+        content: 'Project',
         link: '/projects'
     },
-    // {
-    //     content: '경력',
-    //     link: '/experience'
-    // },
-    {
-        content: '연락처',
-        link: '/contact'
-    }
 ]

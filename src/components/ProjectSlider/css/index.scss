@@ -1,12 +1,9 @@
 #root {
     .project-wrapper {
-
         &>.projects-slider {
-            width: 422px;
+            width: 442px;
             position: relative;
             overflow: hidden;
-            margin: 0 auto;
-            position: relative;
 
             &>.slider-track {
                 display: flex;
@@ -18,7 +15,7 @@
                 position: absolute;
                 display: flex;
                 justify-content: space-between;
-                top: 140px;
+                top: 173px;
                 left: 20px;
 
                 &>.slider-button {
