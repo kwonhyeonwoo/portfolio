@@ -1,6 +1,6 @@
 import React from 'react';
 import "./css/index.css";
-import TopBannerContainer from '../../components/TopBanner/containers/TopBannerContainer';
+import TopBannerContainer from '../../components/common/TopBanner/containers/TopBannerContainer';
 import { images } from '../../assets';
 import ProjectSliderContainer from '../../components/ProjectSlider/containers/ProjectSliderContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

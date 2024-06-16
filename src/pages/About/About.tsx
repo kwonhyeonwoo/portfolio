@@ -1,7 +1,7 @@
 import React from 'react'
 import "./css/index.css";
 import { images } from '../../assets'
-import TopBannerContainer from '../../components/TopBanner/containers/TopBannerContainer';
+import TopBannerContainer from '../../components/common/TopBanner/containers/TopBannerContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 function About() {
